@@ -1,3 +1,7 @@
+> [!IMPORTANT]  
+> Client in beta, and have bugs
+
+
 <div align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="res/meichW.PNG" width="100%">
