@@ -1,5 +1,5 @@
 > [!IMPORTANT]  
-> Client in beta, and have bugs
+> Mod Loader in beta, and have bugs
 
 
 <div align="center">
