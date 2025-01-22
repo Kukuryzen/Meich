@@ -1,0 +1,3 @@
+func main() {
+    console::log("Meich is success running in Garry's Mod!");
+}
