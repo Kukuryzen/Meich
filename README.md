@@ -11,7 +11,7 @@
          width="50%">
   </picture>
 
-  | [Website](https://meichsdk.github.io) | [Docs](https://meichsdk.github.io/book) | [License](LICENSE.md) |
+  | [Website](https://meichsdk.github.io) | [Docs](https://meichsdk.github.io/book) | [License](LICENSE) |
 
   
   Alternative lang for Garry's Mod
