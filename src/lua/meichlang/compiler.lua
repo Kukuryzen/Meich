@@ -22,9 +22,23 @@ function Compiler:run(filePath)
     local file = file.Read(filePath, "LUA")
     if file then
         local compiledCode = self:compile(file)
-        print("Compiled Code:\n" .. compiledCode)
+        print("Compiled Code:\n" .. compiledCode) -- Отладочный вывод
         RunString(compiledCode)
     else
-        error("Failed to load MeichLang file: " .. filePath)
+        error("Failed to load Meich file: " .. filePath)
+    end
+end
+
+function Compiler:runAllIndexFiles()
+    local addons = file.Find("addons/*", "LUA")
+    for _, addon in ipairs(addons) do
+        local srcPath = "addons/" .. addon .. "/meich/src/"
+        if file.IsDir(srcPath, "LUA") then
+            local indexFilePath = srcPath .. "/index.meich"
+            if file.Exists(indexFilePath, "LUA") then
+                print("Loading MeichLang file: " .. indexFilePath)
+                self:run(indexFilePath)
+            end
+        end
     end
 end
